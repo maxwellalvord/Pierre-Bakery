@@ -33,7 +33,7 @@ namespace Bakery.Tests
     public void Price_CalculatePriceOfThreePastry_true()
     {
       int pastryInput = 3;
-      int pastryPrice = 10; 
+      int pastryPrice = 5; 
       Pastry newPastry = new Pastry(pastryInput);
       Assert.AreEqual(pastryPrice, newPastry.Number(3));
     }
