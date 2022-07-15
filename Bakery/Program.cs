@@ -6,13 +6,13 @@ namespace Bakery.Models
   {
     public static void Main()
     {
-      Console.WriteLine("Welcome to Pierre's Bakery");
-      Console.WriteLine("How many loaves of bread do you want? They cost 5 dollars and have a buy 2 get one free sale");
+      Console.WriteLine("Welcome to Pierre's Bakery.");
+      Console.WriteLine("How many loaves of bread do you want? They cost 5 dollars and have a buy 2 get one free sale.");
       string breadResponse = Console.ReadLine();
       int errorCatch = Convert.ToInt32(breadResponse);
       if (errorCatch > 12)
       {
-        Console.WriteLine("Sorry we only sell our bread at a maximum of a dozen per customer");
+        Console.WriteLine("Sorry we only sell our bread at a maximum of a dozen per customer.");
         Main();
       }
 
@@ -21,7 +21,7 @@ namespace Bakery.Models
       int errorCatch2 = Convert.ToInt32(pastryResponse);
       if (errorCatch2 > 8)
       {
-        Console.WriteLine("Sorry we only sell our pastries at a maximum of 8 per customer");
+        Console.WriteLine("Sorry we only sell our pastries at a maximum of 8 per customer.");
         Main();
       }
 
@@ -29,14 +29,14 @@ namespace Bakery.Models
       int result2 = newPastry.Number(errorCatch2);
       Bread newBread = new Bread(errorCatch);
       int result = newBread.Number(errorCatch);
-      Console.WriteLine("For " + breadResponse + " loaves of bread you pay a price of $" + result);
-      Console.WriteLine("For " + pastryResponse + " pastries you pay a price of $" + result2);
-      Console.WriteLine("is this the correct amount of bread and pastries? Answer yes to see your final total and no to restart.");
+      Console.WriteLine("For " + breadResponse + " loaves of bread you pay a price of $" + result + ".");
+      Console.WriteLine("For " + pastryResponse + " pastries you pay a price of $" + result2 + ".");
+      Console.WriteLine("Is this the correct amount of bread and pastries? Answer yes to see your final total and no to restart.");
       string finalResponse = Console.ReadLine();
-      if (finalResponse == "yes")
+      if (finalResponse.ToLower() == "yes")
       {
         int finalTotal = result + result2;
-        Console.WriteLine("All together your final total will be $" + finalTotal);
+        Console.WriteLine("All together your final total will be $" + finalTotal + ".");
         Main();
       }
       else
