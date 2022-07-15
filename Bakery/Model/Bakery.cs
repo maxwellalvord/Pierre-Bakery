@@ -41,7 +41,7 @@ namespace Bakery.Models
         {
           number = number * 5;
         }
-        else if(3 <= number & number < 7 )
+        else if(3 <= number & number < 6)
         {
           number = (number - 1) * 5;
         }
