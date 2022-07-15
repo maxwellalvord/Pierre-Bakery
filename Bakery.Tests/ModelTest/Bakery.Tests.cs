@@ -48,5 +48,14 @@ namespace Bakery.Tests
 
       Assert.AreEqual(breadPrice, newBread.Number(4));
     }
+    [TestMethod]
+    public void Price_CalculatePriceOfSixBread_true()
+    {
+      int breadInput = 6;
+      int breadPrice = 20; 
+      Bread newBread = new Bread(breadInput);
+
+      Assert.AreEqual(breadPrice, newBread.Number(6));
+    }
   }
 }
