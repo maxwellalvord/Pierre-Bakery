@@ -37,15 +37,14 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(pastryInput);
       Assert.AreEqual(pastryPrice, newPastry.Number(3));
     }
-    // [TestMethod]
-    // public void Price_CalculatePriceOfFourPastry_true()
-    // {
-    //   int pastryInput = 4;
-    //   int pastryPrice = 15; 
-    //   Pastry newPastry = new Pastry(pastryInput);
-
-    //   Assert.AreEqual(pastryPrice, newPastry.Number(4));
-    // }
+    [TestMethod]
+    public void Price_CalculatePriceOfFourPastry_true()
+    {
+      int pastryInput = 4;
+      int pastryPrice = 7; 
+      Pastry newPastry = new Pastry(pastryInput);
+      Assert.AreEqual(pastryPrice, newPastry.Number(6));
+    }
     // public void Price_CalculatePriceOfSixPastry_true()
     // {
     //   int pastryInput = 6;
