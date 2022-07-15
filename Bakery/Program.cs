@@ -31,10 +31,18 @@ namespace Bakery.Models
       int result = newBread.Number(errorCatch);
       Console.WriteLine("For " + breadResponse + " loaves of bread you pay a price of $" + result);
       Console.WriteLine("For " + pastryResponse + " pastries you pay a price of $" + result2);
-      
-      int finalTotal = result + result2;
-      Console.WriteLine("All together your final total will be $" + finalTotal);
-      Main();
+      Console.WriteLine("is this the correct amount of bread and pastries? Answer yes to see your final total and no to restart.");
+      string finalResponse = Console.ReadLine();
+      if (finalResponse == "yes")
+      {
+        int finalTotal = result + result2;
+        Console.WriteLine("All together your final total will be $" + finalTotal);
+        Main();
+      }
+      else
+      {
+        Main();
+      }
     }
   }
 }
