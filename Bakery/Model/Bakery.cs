@@ -14,7 +14,7 @@ namespace Bakery.Models
       }
       else if(number % 12 == 0)
       {
-        number = (number -4) * 5;
+        number = (number - 4) * 5;
       }
       else if(number % 9 == 0)
       {

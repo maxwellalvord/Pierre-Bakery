@@ -1,4 +1,4 @@
-# Bakery
+# Pierre's Bakery
 
 #### A simple console application to tell the user the price fro their purchase of a combination of bread and pastries.
 
