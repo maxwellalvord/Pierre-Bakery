@@ -8,7 +8,8 @@ namespace Bakery.Models
     
     public int Number (int number)
     {
-      return 10;
+      number = number * 5;
+      return number;
     }
     
     public Bread(int amount)

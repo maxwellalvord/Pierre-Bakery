@@ -22,7 +22,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Price_CalculatePriceBread_true()
+    public void Price_CalculatePriceOfOneBread_true()
     {
       int breadInput = 1;
       int breadPrice = 5; 
