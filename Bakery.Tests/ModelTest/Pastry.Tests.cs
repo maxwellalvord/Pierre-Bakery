@@ -43,7 +43,7 @@ namespace Bakery.Tests
       int pastryInput = 4;
       int pastryPrice = 7; 
       Pastry newPastry = new Pastry(pastryInput);
-      Assert.AreEqual(pastryPrice, newPastry.Number(6));
+      Assert.AreEqual(pastryPrice, newPastry.Number(4));
     }
     // public void Price_CalculatePriceOfSixPastry_true()
     // {
