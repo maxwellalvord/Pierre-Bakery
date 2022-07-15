@@ -8,7 +8,11 @@ namespace Bakery.Models
     
     public int Number (int number)
     {
-      if (number % 12 == 0)
+      if (number < 1)
+      {
+        number = 0;
+      }
+      else if(number % 12 == 0)
       {
         number = (number -4) * 5;
       }

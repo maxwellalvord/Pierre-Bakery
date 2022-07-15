@@ -15,10 +15,10 @@ namespace Bakery.Models
         Console.WriteLine("Sorry we only sell our bread at a maximum of a dozen");
         Main();
       }
-      // Word newWord = new Word(response);
-      // int result = newWord.Letter(response);
-      // Console.WriteLine("The word " + response + " has a score of " + result);
-      // Main();
+      Bread newBread = new Bread(errorCatch);
+      int result = newBread.Number(errorCatch);
+      Console.WriteLine("For " + breadResponse + " you pay a price of $" + result);
+      Main();
     }
   }
 }
