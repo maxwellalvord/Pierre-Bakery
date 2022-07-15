@@ -8,6 +8,14 @@ namespace Bakery.Models
     
     public int Number (int number)
     {
+      if (number % 3 == 0)
+      {
+        number = (number - 1) * 5;
+      }
+      else
+      {
+        number = number * 5;
+      }
       number = number * 5;
       return number;
     }
