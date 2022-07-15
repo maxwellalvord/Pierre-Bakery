@@ -22,10 +22,10 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Price_CalculatePriceOfOneBread_true()
+    public void Price_CalculatePriceOfOnePastry_true()
     {
       int pastryInput = 1;
-      int pastryPrice = 5; 
+      int pastryPrice = 2;
       Pastry newPastry = new Pastry(pastryInput);
       Assert.AreEqual(pastryPrice, newPastry.Number(1));
     }
