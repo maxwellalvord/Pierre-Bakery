@@ -16,7 +16,6 @@ namespace Bakery.Models
       {
         number = number * 5;
       }
-      number = number * 5;
       return number;
     }
     
