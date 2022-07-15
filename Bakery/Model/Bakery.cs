@@ -8,7 +8,11 @@ namespace Bakery.Models
     
     public int Number (int number)
     {
-      if (number % 6 == 0)
+      if (number % 9 == 0)
+      {
+        number = (number - 3) * 5;
+      }
+      else if(number % 6 == 0)
       {
         number = (number - 2) *5;
       }
@@ -18,7 +22,14 @@ namespace Bakery.Models
       }
       else
       {
-        if (number < 3)
+        return Remainder(number);
+      }
+      return number;
+    }
+
+      public int Remainder(int number)
+    { 
+      if (number < 3)
         {
           number = number * 5;
         }
@@ -34,7 +45,6 @@ namespace Bakery.Models
         {
           number = (number - 3) * 5;
         }
-      }
       return number;
     }
     
