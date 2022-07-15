@@ -29,31 +29,30 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(pastryInput);
       Assert.AreEqual(pastryPrice, newPastry.Number(1));
     }
-    //  [TestMethod]
-    // public void Price_CalculatePriceOfthreeBread_true()
-    // {
-    //   int breadInput = 3;
-    //   int breadPrice = 10; 
-    //   Pastry newBread = new Pastry(breadInput);
-
-    //   Assert.AreEqual(breadPrice, newBread.Number(3));
-    // }
+     [TestMethod]
+    public void Price_CalculatePriceOfThreePastry_true()
+    {
+      int pastryInput = 3;
+      int pastryPrice = 10; 
+      Pastry newPastry = new Pastry(pastryInput);
+      Assert.AreEqual(pastryPrice, newPastry.Number(3));
+    }
     // [TestMethod]
-    // public void Price_CalculatePriceOfFourBread_true()
+    // public void Price_CalculatePriceOfFourPastry_true()
     // {
-    //   int breadInput = 4;
-    //   int breadPrice = 15; 
-    //   Pastry newBread = new Pastry(breadInput);
+    //   int pastryInput = 4;
+    //   int pastryPrice = 15; 
+    //   Pastry newPastry = new Pastry(pastryInput);
 
-    //   Assert.AreEqual(breadPrice, newBread.Number(4));
+    //   Assert.AreEqual(pastryPrice, newPastry.Number(4));
     // }
-    // public void Price_CalculatePriceOfSixBread_true()
+    // public void Price_CalculatePriceOfSixPastry_true()
     // {
-    //   int breadInput = 6;
-    //   int breadPrice = 20; 
-    //   Pastry newBread = new Pastry(breadInput);
+    //   int pastryInput = 6;
+    //   int pastryPrice = 20; 
+    //   Pastry newPastry = new Pastry(pastryInput);
 
-    //   Assert.AreEqual(breadPrice, newBread.Number(6));
+    //   Assert.AreEqual(pastryPrice, newPastry.Number(6));
     // }
   }
 }
