@@ -6,10 +6,10 @@ namespace Bakery.Models
   {
     public int Amount { get; set;}
     
-    // public int Number (int number)
-    // {
-      
-    // }
+    public int Number (int number)
+    {
+      return 10;
+    }
     
     public Bread(int amount)
     { 

@@ -14,21 +14,21 @@ namespace Bakery.Tests
     // }
    
    [TestMethod]
-    public void BreadAmountConstructor_CreatesInstanceOfAmountofBread_true()
+    public void BreadAmountConstructor_CreatesInstanceOfAmountOfBread_true()
     {
       int breadInput = 1;
       Bread newBread = new Bread(breadInput);
       Assert.AreEqual(breadInput, newBread.Amount);
     }
 
-    // [TestMethod]
-    // public void WordToLetter_ScoreLetters_true()
-    // {
-    //   string wordInput = "car";
-    //   int wordScore = 5; 
-    //   Bread newWord = new Bread(wordInput);
+    [TestMethod]
+    public void Price_CalculatePriceBread_true()
+    {
+      int breadInput = 1;
+      int breadPrice = 5; 
+      Bread newBread = new Bread(breadInput);
 
-    //   Assert.AreEqual(wordScore, newWord.Letter("car"));
-    // }
+      Assert.AreEqual(breadPrice, newBread.Number(1));
+    }
   }
 }
