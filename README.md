@@ -19,8 +19,9 @@ This console application allows the user to input the number of bread and the nu
 * $ git clone https://github.com/maxwellalvord/Pierre-Bakery.git
 * cd into Pierre-Bakery.
 * cd into Bakery.
-* $ dotnet restore. 
-* $ dotnet run.
+* $ dotnet restore
+* $ dotnet build 
+* $ dotnet run
 
 ## Known Bugs
 
